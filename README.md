@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-pip install git+https://github.com/istresearch/coconut
+pip install limesurvey-coconut
 ```
 
 ## Usage

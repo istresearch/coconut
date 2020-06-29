@@ -9,7 +9,7 @@ with open("requirements.txt", "r") as f:
 
 
 setuptools.setup(
-    name=f"coconut",
+    name=f"limesurvey-coconut",
     version=__version__,
     author="IST Research",
     author_email="support@istresearch.com",

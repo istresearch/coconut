@@ -1,0 +1,21 @@
+graft coconut
+
+include setup.py
+include LICENSE.txt
+include README.md
+include requirements.txt
+
+prune .git
+prune .circleci
+prune .pytest_cache
+prune build
+prune dist
+prune tmp
+prune venv
+prune node_modules
+prune test
+
+global-exclude *.pyc
+global-exclude *.env
+global-exclude *.json
+global-exclude .DS_Store

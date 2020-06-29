@@ -1,0 +1,13 @@
+twine>=3.2.0
+black==19.10b0
+coverage==5.1
+pytest-benchmark==3.2.3
+pytest-circleci==0.0.3
+pytest-cov==2.10.0
+pytest==5.4.3
+radon==4.1.0
+recommonmark==0.6.0
+responses==0.10.15
+sphinx-rtd-theme==0.4.3
+sphinx==3.1.1
+xenon==0.7.0

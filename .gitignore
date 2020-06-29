@@ -4,6 +4,10 @@
 *.log
 *.pyc
 *.swp
+*.pypirc
+limesurvey_coconut.egg-info/*
+build/*
+dist/*
 .coverage
 /.idea/*
 .vscode/*

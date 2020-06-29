@@ -1,4 +1,4 @@
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 try:
     from coconut.question import Question, QuestionGroup

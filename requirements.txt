@@ -1,0 +1,9 @@
+loguru>=0.5.1
+google-oauth==1.0.1
+gspread-pandas==2.2.3
+pandas>=1.0.5
+tinyrpc==1.0.4
+pendulum>=2.1.0
+pyyaml>=5.3.1
+tqdm>=4.47.0
+xlsxwriter>=1.2.9

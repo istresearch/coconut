@@ -21,11 +21,12 @@ class Survey:
         """
         return Response
 
-    def __init__(self, survey_id, lime_api: LimeAPI, workbook_id=None):
+    def __init__(self, survey_id, lime_api: LimeAPI, workbook_id=None, title=None):
         """Instantiates a Survey instance
         :param survey_id: LimeSurvey survey ID
         :param lime_api: LimeSurvey API instance
         """
+        self._title = title
         self.survey_id = survey_id
         self.lime_api = lime_api
         self.workbook_id = workbook_id
@@ -51,11 +52,15 @@ class Survey:
     @property
     def title(self):
         """Survey Title"""
+        if self._title is None:
+            try:
+                self.survey_props["surveyls_title"]
+            except:
+                return f'Survey {self.survey_id}'
+        else:
+            return self._title
         return f"Survey"
-        # if self.survey_props is None:
-        #     return
-        # else:
-        #     return self.survey_props["surveyls_title"]
+
 
     @property
     def worksheets(self) -> List[Tuple[str, pd.DataFrame]]:
